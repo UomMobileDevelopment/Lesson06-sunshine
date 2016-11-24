@@ -77,6 +77,16 @@ public class TestUtilities extends AndroidTestCase {
         return testValues;
     }
 
+    static ContentValues createThessalonikiLocationValues() {
+        ContentValues testValues = new ContentValues();
+        testValues.put(WeatherContract.LocationEntry.COLUMN_LOCATION_SETTING, "734077");
+        testValues.put(WeatherContract.LocationEntry.COLUMN_CITY_NAME, "Thessaloniki");
+        testValues.put(WeatherContract.LocationEntry.COLUMN_COORD_LAT, 40.6403);
+        testValues.put(WeatherContract.LocationEntry.COLUMN_COORD_LONG, 22.9439);
+
+        return testValues;
+    }
+
     /*
         Students: You can uncomment this function once you have finished creating the
         LocationEntry part of the WeatherContract as well as the WeatherDbHelper.
